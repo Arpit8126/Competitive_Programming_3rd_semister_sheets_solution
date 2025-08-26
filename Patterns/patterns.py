@@ -127,6 +127,7 @@ def pattern_9(n):
         for j in range(i+1):
             print("*",end="")
         print()
+
 '''
  ****
   ***
@@ -142,6 +143,14 @@ def pattern_10(n):
             print("*",end="")
         print()
     
+'''
+**********
+****  ****
+***    ***
+**      **
+*        *
+'''
+
 def pattern_11(n):
     for i in range(n):
         for j in range(n-i):
@@ -152,6 +161,13 @@ def pattern_11(n):
             print("*",end="")
         print()
 
+'''
+*        *
+**      **
+***    ***
+****  ****
+'''
+
 def pattern_12(n):
     for i in range(1,n):
         for j in range(i):
@@ -161,6 +177,18 @@ def pattern_12(n):
         for j in range(i):
             print("*",end="")
         print()
+
+'''
+**********
+****  ****
+***    ***
+**      **
+*        *
+*        *
+**      **
+***    ***
+****  ****
+'''
 
 def pattern_13(n):
     for i in range(n):
@@ -180,11 +208,27 @@ def pattern_13(n):
             print("*",end="")
         print()
 
+'''
+1
+12
+123
+1234
+12345
+'''
+
 def pattern_14(n):
     for i in range(n):
         for j in range(1,i+2):
             print(j,end="")
         print()
+
+'''
+12345
+1234
+123
+12
+1
+'''
 
 def pattern_15(n):
     for i in range(n):
@@ -192,16 +236,40 @@ def pattern_15(n):
             print(j,end="")
         print()
 
+'''
+54321
+4321
+321
+21
+1
+'''
+
 def pattern_16(n):
     for i in range(n):
         for j in range(n-i,0,-1):
             print(j,end="")
         print()
 
+'''
+    *
+   ***
+  *****
+ *******
+*********
+'''
+
+def pattern_17(n):
+    for i in range(1,n+1):
+        for j in range(n-i,0,-1):
+            print(" ",end="")
+        for j in range(1,2*i):
+            print("*",end="")
+        print()
+
 
 
 def output():
     a=int(input("Enter the no of rows : "))
-    pattern_15(a)
+    pattern_17(a)
 
 output()
