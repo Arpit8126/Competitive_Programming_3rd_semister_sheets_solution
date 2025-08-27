@@ -305,11 +305,24 @@ def pattern_19(n):
             print("*",end="")
         print()
     
+'''
+1 2 3 4 5 
+1 2 3 4 *
+1 2 3 * * *
+1 2 * * * * *
+1 * * * * * * *
+'''
 
-
+def pattern_20(n):
+    for i in range(n):
+        for j in range(1,n-i+1):
+            print(j,end=" ")
+        for j in range(1,2*i):
+            print("*",end=" ")
+        print()
 
 def output():
     a=int(input("Enter the no of rows : "))
-    pattern_19(a)
+    pattern_20(a)
 
 output()
