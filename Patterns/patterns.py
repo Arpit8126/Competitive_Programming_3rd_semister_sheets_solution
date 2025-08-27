@@ -266,10 +266,50 @@ def pattern_17(n):
             print("*",end="")
         print()
 
+'''
+1
+2 3
+4 5 6
+7 8 9 10
+11 12 13 14 15
+'''
+
+def pattern_18(n):
+    start=1
+    end=2
+    for i in range(n):
+        for j in range(start,end):
+            print(j,end=" ")
+        print()
+        start=end
+        end=end+i+2
+
+'''
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+'''
+
+def pattern_19(n):
+    for i in range(1,2*n):
+        stars=i
+        if(i>n):
+            stars=2*n-i
+        for j in range(1,stars+1):
+            print("*",end="")
+        print()
+    
+
 
 
 def output():
     a=int(input("Enter the no of rows : "))
-    pattern_17(a)
+    pattern_19(a)
 
 output()
