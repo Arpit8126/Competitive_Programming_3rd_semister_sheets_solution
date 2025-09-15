@@ -44,7 +44,7 @@ def pattern_3(n):
 
 def pattern_4(n):
     for i in range(n):
-        for j in range(n,i,-1):
+        for j in range(n-i):
              print("*",end="")
         print()
 
@@ -57,8 +57,8 @@ def pattern_4(n):
 '''
 
 def pattern_5(n):
-    for i in range(1,n+1):
-        for j in range(1,i+1):
+    for i in range(n):
+        for j in range(1,i+2):
             if j%2==0:
              print("*",end="")
             else:
@@ -323,6 +323,6 @@ def pattern_20(n):
 
 def output():
     a=int(input("Enter the no of rows : "))
-    pattern_20(a)
+    pattern_9(a)
 
 output()
